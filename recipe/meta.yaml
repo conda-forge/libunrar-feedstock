@@ -1,5 +1,5 @@
 {% set name = "libunrar" %}
-{% set version = "6.2.3" %}
+{% set version = "6.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://www.rarlab.com/rar/unrarsrc-{{ version }}.tar.gz
-  sha256: 120936e41f826cd63d77a580aeea64c1b79fd3e2434f58ce8184e783b51e5b01
+  sha256: 22e0a37444c6beb194d4dfafdce480d1143547eb1102fd65430e1e9522a545ad
   patches:
     - 0001-REMOVE-HARDCODED-MAKEFILE-ENV.patch  # [unix]
     - 0002-REMOVE-INSTALL-OPTION.patch  # [osx]
@@ -16,7 +16,7 @@ source:
 build:
   run_exports:
     - {{ pin_subpackage('libunrar', max_pin='x.x.x') }}
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://www.rarlab.com/
-  summary: 'Free utility for RAR archives'
+  summary: Free utility for RAR archives
   description: ''
   license: LicenseRef-UnRAR
   license_file: license.txt
