@@ -14,6 +14,9 @@ fi
 make lib
 DESTDIR="${PREFIX}" make install-lib
 
+# main() function was disabled in library builds
+make clean
+
 make unrar
 mkdir -p "${PREFIX}/bin"
 DESTDIR="${PREFIX}" make install-unrar
