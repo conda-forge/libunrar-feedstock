@@ -1,11 +1,11 @@
-About libunrar
-==============
+About libunrar-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libunrar-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.rarlab.com/
 
 Package license: LicenseRef-UnRAR
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libunrar-feedstock/blob/main/LICENSE.txt)
 
 Summary: Free utility for RAR archives
 
