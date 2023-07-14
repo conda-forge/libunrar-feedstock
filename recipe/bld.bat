@@ -1,9 +1,9 @@
-msbuild UnRAR.vcxproj /p:configuration=release /p:WindowsTargetPlatformVersion=10.0
+msbuild UnRAR.vcxproj /p:configuration=release /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143
 if errorlevel 1 exit 1
 copy build\unrar64\release\UnRAR.exe %LIBRARY_BIN%
 if errorlevel 1 exit 1
 
-msbuild UnRARDll.vcxproj /p:configuration=release /p:WindowsTargetPlatformVersion=10.0
+msbuild UnRARDll.vcxproj /p:configuration=release /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143
 if errorlevel 1 exit 1
 copy build\unrardll64\release\UnRAR.dll %LIBRARY_BIN%
 if errorlevel 1 exit 1
