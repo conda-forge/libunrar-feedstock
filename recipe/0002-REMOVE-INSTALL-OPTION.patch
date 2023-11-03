@@ -1,6 +1,6 @@
 --- makefile
 +++ makefile
-@@ -160,8 +160,8 @@
+@@ -62,8 +62,8 @@
  	$(LINK) -shared -o libunrar.so $(LDFLAGS) $(OBJECTS) $(LIB_OBJ)
  	$(AR) rcs libunrar.a $(OBJECTS) $(LIB_OBJ)
  
