@@ -1,6 +1,6 @@
 --- makefile
 +++ makefile
-@@ -5,14 +5,6 @@
+@@ -5,14 +5,14 @@
  # 2024.08.19: -march=native isn't recognized on some platforms such as RISCV64.
  # Thus we removed it. Clang ARM users can add -march=armv8-a+crypto to enable
  # ARM NEON crypto.
@@ -12,6 +12,14 @@
 -AR=ar
 -LDFLAGS=-pthread
 -DESTDIR=/usr
++#CXX=c++
++#CXXFLAGS=-O2 -std=c++11 -Wno-logical-op-parentheses -Wno-switch -Wno-dangling-else
++#LIBFLAGS=-fPIC
++#DEFINES=-D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DRAR_SMP
++#STRIP=strip
++#AR=ar
++#LDFLAGS=-pthread
++#DESTDIR=/usr
  
  ##########################
  
