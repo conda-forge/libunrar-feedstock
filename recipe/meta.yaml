@@ -1,5 +1,5 @@
 {% set name = "libunrar" %}
-{% set version = "7.2.4" %}
+{% set version = "7.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://www.rarlab.com/rar/unrarsrc-{{ version }}.tar.gz
-  sha256: b02e571a33af7711cd803080500370dc1d28eea82b2032480819d27462ad8b31
+  sha256: 3d7b402ce7b9825af32a5f593379269e742c883d9d276527be19d0e9f6a114f9
   patches:
     - 0001-REMOVE-HARDCODED-MAKEFILE-ENV.patch  # [unix]
     - 0002-REMOVE-INSTALL-OPTION.patch  # [osx]
